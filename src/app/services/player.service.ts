@@ -9,6 +9,11 @@ export class PlayerService {
 
   constructor() { }
   getPlayers(): Player[] {
-    return PLAYERS
+  return PLAYERS;
+}
+  getPlayer(id: number) {
+    let currentPlayer = PLAYERS.filter(item => item.id === id);
+    console.log('currentPlayer', currentPlayer[0])
+    return currentPlayer[0];
   }
 }

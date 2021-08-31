@@ -23,5 +23,7 @@
         <div class="heading box">IN</div>
         <div class="heading box">TOTAL</div>
     </div>
-    <app-player></app-player>
+    <ng-template ngFor let-item [ngForOf]="players">
+        <app-player [playerId]="item.id"></app-player>
+    </ng-template>
 </div>
