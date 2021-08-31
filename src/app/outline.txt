@@ -1,0 +1,13 @@
+services
+    get golf course data.
+    firebase service
+interfaces:
+    golf course data
+    game
+        players (scores)
+        course
+Components:
+    Top Nav
+    Main Body
+    
+    

@@ -1,0 +1,40 @@
+<div id ="row-p1" class="row color-row">
+    <div class='heading box name'>
+        {{name}}
+    </div>
+    <ng-template ngFor let-hole [ngForOf]="firstHalf" let-i="index"> 
+        <input (change)='update()' type='number' [(ngModel)]='holeScore[i]' class="box cell score-cell">    
+    </ng-template>
+    <div id='out_p1' class="heading box">{{outTotal}}</div>
+    <ng-template ngFor let-hole [ngForOf]="firstHalf" let-i="index"> 
+        <input (change)='update()' type='number' [(ngModel)]='holeScore[i+9]' class="box cell score-cell">    
+    </ng-template>
+    <div class="heading box">{{inTotal}}</div>
+    <div class="heading box">{{total}}</div>
+</div>
+<input [(ngModel)]='holeScore[1]' class="box cell">
+<input [(ngModel)]='holeScore[2]' class="box cell">
+<!-- <div id ="row-p1" class="row color-row">
+    <div id='title_p1' class="heading box name"><input id='name-input_p1' type='text' class="name-value"><div id='name_p1' class="p-name">Player 1</div></div>
+    <div id='hole_p1-1' class="box cell"></div>
+    <div id='hole_p1-2' class="box cell"></div>
+    <div id='hole_p1-3' class="box cell"></div>
+    <div id='hole_p1-4' class="box cell"></div>
+    <div id='hole_p1-5' class="box cell"></div>
+    <div id='hole_p1-6' class="box cell"></div>
+    <div id='hole_p1-7' class="box cell"></div>
+    <div id='hole_p1-8' class="box cell"></div>
+    <div id='hole_p1-9' class="box cell"></div>
+    <div id='out_p1' class="heading box"></div>
+    <div id='hole_p1-10' class="box cell"></div>
+    <div id='hole_p1-11' class="box cell"></div>
+    <div id='hole_p1-12' class="box cell"></div>
+    <div id='hole_p1-13' class="box cell"></div>
+    <div id='hole_p1-14' class="box cell"></div>
+    <div id='hole_p1-15' class="box cell"></div>
+    <div id='hole_p1-16' class="box cell"></div>
+    <div id='hole_p1-17' class="box cell"></div>
+    <div id='hole_p1-18' class="box cell"></div>
+    <div id='in_p1' class="heading box"></div>
+    <div id='total_p1' class="heading box"></div>
+</div> -->
