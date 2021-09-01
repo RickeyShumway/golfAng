@@ -7,6 +7,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { TableComponent } from './table/table.component';
 import { PlayerComponent } from './player/player.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCommonModule } from '@angular/material/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -15,12 +19,17 @@ import { PlayerComponent } from './player/player.component';
     DropdownComponent,
     TableComponent,
     PlayerComponent,
-  
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
