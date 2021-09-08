@@ -1,0 +1,34 @@
+.table-container {
+  height: 100%;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+
+  .non-scroll {
+    background-color: lightgreen;
+    width: 8.5%;
+    box-sizing: border-box;
+    height: 100%;
+    .mat-grid-list.heading {
+
+
+    }
+  }
+  .scrolling {
+    overflow-x: scroll;
+    width:91.5%;
+  }
+  .mat-grid-list.scroll {
+    width: 5000px;
+
+  }
+  .mat-grid-tile {
+    width: 100%;
+
+  }
+}
+.box {
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+}
+

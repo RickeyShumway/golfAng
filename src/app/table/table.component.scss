@@ -15,7 +15,7 @@
     height: 100%;
     box-sizing: border-box;
     background-color: orange;
-    min-width: var(--cell-size);
+    min-width: 30vh;
     .heading {
       display: flex;
       align-items: center;
@@ -36,7 +36,8 @@
     .box {
       border: 1px solid black;
       height: 15%;
-      min-width: var(--cell-size);
+      min-width: 30vh;
+
     }
   }
 }
