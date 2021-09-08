@@ -1,25 +1,10 @@
-<div class="top-bar">
-    <div class='left'>
-    <div class="title">
-        {{title}}
-    </div>
-    <div id="course">{{course}}</div>
+<mat-toolbar>
+  <mat-toolbar-row>
+    <h1>{{title}}</h1>
+    <span></span>
+    <span></span>
+    <button mat-button>Choose Course</button>
+    <button mat-button>Choose Tee</button>
+  </mat-toolbar-row>
 
-    </div>
-    <div class='right'>
-        <div class="dropdown">
-            <button id="course-btn" class="button">CHOOSE COURSE</button>
-            <div id="course-drop" class="drop-content">
-            </div>
-        </div>
-        <div class="dropdown">
-            <button id="tee-btn" class="button">CHOOSE TEE</button>
-            <div id="tee-drop" class="drop-content">
-                <div id="black" class ="tee drop-item">Black/Pro</div>
-                <div id="blue" class ="tee drop-item">Blue/Champion</div>
-                <div id="white" class ="tee drop-item">White/Men</div>
-                <div id="red" class ="tee drop-item">Red/Women</div>
-            </div>
-        </div>
-    </div>
-</div>
+</mat-toolbar>
