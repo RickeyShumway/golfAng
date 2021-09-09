@@ -2,7 +2,7 @@ import { Player } from './interfaces/player';
 
 export const PLAYERS: Player[] = [
     {id: 1, name: 'Jon', holeScore:
-    [null, null, null,null, null, null,null, null, null,null, null, null, null, null, null,null, null, null],
+    [1, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,5,5],
     finished: false},
     {id: 2, name: 'Anne', holeScore:
     [null, null, null,null, null, null,null, null, null,null, null, null, null, null, null,null, null, null],

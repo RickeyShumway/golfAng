@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Table2Component } from './table2/table2.component';
 import { SecondBarComponent } from './second-bar/second-bar.component'
 import {MatGridListModule} from '@angular/material/grid-list';
+import { HttpClientModule } from '@angular/common/http';
+import { ParComponent } from './par/par.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     PlayerComponent,
     Table2Component,
     SecondBarComponent,
+    ParComponent,
 
 
   ],
@@ -35,7 +38,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatToolbarModule,
     MatButtonModule,
     MatCommonModule,
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

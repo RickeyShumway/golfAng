@@ -2,19 +2,22 @@
     <div class='heading box name'>
         {{player.name}}
     </div>
-    <!-- <div *ngFor="let hole of firstHalf;let i=index" class="box cell score-cell"> 
-        <input type='number' [(ngModel)]='player.holeScore[i]' class="box cell score-cell">    
+    <!-- <div *ngFor="let hole of firstHalf;let i=index" class="box cell score-cell">
+        <input type='number' [(ngModel)]='player.holeScore[i]' class="box cell score-cell">
     </div> -->
-    <ng-template ngFor let-hole [ngForOf]="secondHalf" let-i="index"> 
-        <input (change)='update()' type='number' [(ngModel)]='player.holeScore[i]' class="box cell score-cell">    
+    <ng-template ngFor let-hole [ngForOf]="secondHalf" let-i="index">
+        <input (change)='update()' type='number' [(ngModel)]='player.holeScore[i]' class="box cell score-cell">
     </ng-template>
     <div id='out_p1' class="heading box">{{outTotal}}</div>
-    <ng-template ngFor let-hole [ngForOf]="firstHalf" let-i="index"> 
-        <input (change)='update()' type='number' [(ngModel)]='player.holeScore[i+9]' class="box cell score-cell">    
+    <ng-template ngFor let-hole [ngForOf]="firstHalf" let-i="index">
+        <input (change)='update()' type='number' [(ngModel)]='player.holeScore[i+9]' class="box cell score-cell">
     </ng-template>
     <div class="heading box">{{inTotal}}</div>
     <div class="heading box">{{total}}</div>
 </div>
+<mat-grid-list class='scrolling' cols='24' rowHeight="10vh" *ngFor="let holeScore in player">
+  <mat-grid-tile class="box">holeScore</mat-grid-tile>
+</mat-grid-list>
 <!-- <input [(ngModel)]='holeScore[1]' class="box cell">
 <input [(ngModel)]='holeScore[2]' class="box cell"> -->
 <!-- <div id ="row-p1" class="row color-row">

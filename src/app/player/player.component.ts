@@ -5,14 +5,14 @@ import { Player } from '../interfaces/player';
 @Component({
   selector: 'app-player',
   // template: '<div>Hello from player {{playerId}}</div>',
-  templateUrl: './player.component.html',
+  templateUrl: './player2.component.html',
   styleUrls: ['./player.component.scss']
 })
 export class PlayerComponent implements OnInit {
   @Input() playerId!: number;
   player!: Player;
-  constructor(private playerService: PlayerService) { 
-    
+  constructor(private playerService: PlayerService) {
+
    }
 
   ngOnInit(): void {
@@ -39,7 +39,7 @@ export class PlayerComponent implements OnInit {
       console.log(this.player.holeScore)
 
   }
-  
-} 
+
+}
 
 

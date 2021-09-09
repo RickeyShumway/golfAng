@@ -1,0 +1,35 @@
+
+  .scroll {
+    width: 5000px;
+
+  }
+  .mat-grid-tile {
+    width: 100%;
+
+  }
+.box {
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  background-color: lightcyan;
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1.4em;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    background-color: rgb(226, 255, 222);
+    outline: none;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+

@@ -1,0 +1,20 @@
+<!-- <mat-grid-list class='scrolling' cols='24' rowHeight="10vh" *ngFor="let holeScore in player">
+  <mat-grid-tile class="box">{{holeScore}}</mat-grid-tile>
+</mat-grid-list> -->
+<mat-grid-list class='scroll' cols='24' rowHeight="10vh">
+  <ng-template ngFor let-hole [ngForOf]="secondHalf" let-i="index">
+    <mat-grid-tile class="box">
+      <!-- {{player.holeScore[i]}} -->
+      <input (change)='update()' type='number' [(ngModel)]='player.holeScore[i]' class="box cell score-cell">
+    </mat-grid-tile>
+  </ng-template>
+  <mat-grid-tile colspan='2' class="box">{{outTotal}}</mat-grid-tile>
+  <ng-template ngFor let-hole [ngForOf]="firstHalf" let-i="index">
+    <mat-grid-tile class="box">
+      <!-- {{player.holeScore[i]}} -->
+      <input (change)='update()' type='number' [(ngModel)]='player.holeScore[i+9]' class="box cell score-cell">
+    </mat-grid-tile>
+  </ng-template>
+  <mat-grid-tile colspan='2' class="box">{{inTotal}}</mat-grid-tile>
+  <mat-grid-tile colspan='2' class="box">{{total}}</mat-grid-tile>
+</mat-grid-list>
