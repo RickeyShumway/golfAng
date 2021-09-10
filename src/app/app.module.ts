@@ -15,7 +15,9 @@ import { Table2Component } from './table2/table2.component';
 import { SecondBarComponent } from './second-bar/second-bar.component'
 import {MatGridListModule} from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
-import { ParComponent } from './par/par.component'
+import { ParComponent } from './par/par.component';
+import { CourseListComponent } from './course-list/course-list.component'
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { ParComponent } from './par/par.component'
     Table2Component,
     SecondBarComponent,
     ParComponent,
+    CourseListComponent,
+
 
 
   ],
@@ -39,7 +43,8 @@ import { ParComponent } from './par/par.component'
     MatButtonModule,
     MatCommonModule,
     MatGridListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

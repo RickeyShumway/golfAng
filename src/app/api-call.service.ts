@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Courses } from './course-info';
+import { Courses, Course } from './course-info';
 import { RouteReuseStrategy } from '@angular/router';
 
 @Injectable({
@@ -14,7 +14,7 @@ export class ApiCallService {
     getCourses(): Observable<Courses> {
     return this.http.get<Courses>('https://golf-courses-api.herokuapp.com/courses');
   }
-    getHoles(id:any) {
-      return this.http.get('https://golf-courses-api.herokuapp.com/courses/' + id)
+    getHoles(id:number): Observable<Course> {
+      return this.http.get<Course>('https://golf-courses-api.herokuapp.com/courses/' + id)
     }
 }

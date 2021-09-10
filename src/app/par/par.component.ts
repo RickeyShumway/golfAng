@@ -5,7 +5,7 @@ import { Course } from '../course-info';
 @Component({
   selector: 'app-par',
   // templateUrl: './par.component.html',
-  template: "<div>{{courseList[0].name}}</div>",
+  template: "<div>{{courseList[1].name}}</div>",
   styleUrls: ['./par.component.scss']
 })
 export class ParComponent implements OnInit {
@@ -17,9 +17,10 @@ export class ParComponent implements OnInit {
     this.apiCall.getCourses()
     .subscribe((res=> {
       this.courseList = res.courses;
-      console.log('courselist', this.courseList)
+      // console.log('courselist', this.courseList)
     }));
 
   }
+  
 
 }

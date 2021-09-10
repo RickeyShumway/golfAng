@@ -3,8 +3,15 @@
     <h1>{{title}}</h1>
     <span></span>
     <span></span>
-    <button mat-button>Choose Course</button>
-    <button mat-button>Choose Tee</button>
+    <!-- <button mat-button>Choose Course</button>
+    <button mat-button>Choose Tee</button> -->
+    <mat-form-field appearance="fill">
+      <mat-label>Choose a Course</mat-label>
+      <mat-select [(value)]="selected" >
+        <mat-option *ngFor="let course of courseList" [value]="course.id">{{course.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>you selected {{selected}}</p>
   </mat-toolbar-row>
 
 </mat-toolbar>

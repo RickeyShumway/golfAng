@@ -13,7 +13,7 @@ export class PlayerService {
 }
   getPlayer(id: number) {
     let currentPlayer = PLAYERS.filter(item => item.id === id);
-    console.log('currentPlayer', currentPlayer[0])
+    // console.log('currentPlayer', currentPlayer[0])
     return currentPlayer[0];
   }
 }
