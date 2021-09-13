@@ -7,6 +7,7 @@ import { SecondBarComponent } from '../second-bar/second-bar.component';
 import { ApiCallService  } from '../api-call.service';
 import { Course } from '../course-info';
 import { MatFormField } from '@angular/material/form-field'
+
 @Component({
   selector: 'app-top-bar',
   templateUrl: './top-bar.component.html',
@@ -15,8 +16,16 @@ import { MatFormField } from '@angular/material/form-field'
 export class TopBarComponent implements OnInit {
   title = 'Golf Scorecard';
   courseList: any;
+  displayList: Boolean =  false;
   constructor(private apiCall: ApiCallService) { }
   selected: number = 0;
+  showList() {
+    console.log('this will display list')
+    this.displayList = !this.displayList;
+  }
+  chooseCourse(id: number) {
+    console.log(`find me${id} course`)
+  }
   ngOnInit(): void {
     this.apiCall.getCourses()
     .subscribe((res=> {
@@ -32,6 +41,6 @@ export class TopBarComponent implements OnInit {
     //   console.log('response', res)
     // }));
   }
-  
+
 
 }

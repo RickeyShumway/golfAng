@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ParComponent } from './par/par.component';
 import { CourseListComponent } from './course-list/course-list.component'
 import {MatSelectModule} from '@angular/material/select';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatCommonModule,
     MatGridListModule,
     HttpClientModule,
-    MatSelectModule
+    MatSelectModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
