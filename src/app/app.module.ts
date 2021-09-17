@@ -19,7 +19,7 @@ import { ParComponent } from './par/par.component';
 import { CourseListComponent } from './course-list/course-list.component'
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
-
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +31,7 @@ import {MatListModule} from '@angular/material/list';
     SecondBarComponent,
     ParComponent,
     CourseListComponent,
+    
 
 
 
@@ -46,7 +47,8 @@ import {MatListModule} from '@angular/material/list';
     MatGridListModule,
     HttpClientModule,
     MatSelectModule,
-    MatListModule
+    MatListModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

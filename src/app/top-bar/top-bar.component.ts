@@ -16,21 +16,20 @@ import { MatFormField } from '@angular/material/form-field'
 export class TopBarComponent implements OnInit {
   title = 'Golf Scorecard';
   courseList: any;
-  displayList: Boolean =  false;
   constructor(private apiCall: ApiCallService) { }
   selected: number = 0;
-  showList() {
-    console.log('this will display list')
-    this.displayList = !this.displayList;
-  }
   chooseCourse(id: number) {
     console.log(`find me${id} course`)
+    this.apiCall.getHoles(id);
+  }
+  chooseTee(id: number) {
+    console.log('tee selected',id);
   }
   ngOnInit(): void {
     this.apiCall.getCourses()
     .subscribe((res=> {
       this.courseList = res.courses;
-      console.log('courselist', this.courseList)
+      // console.log('courselist', this.courseList)
     }));
   }
   ngOnChanges(changes: SimpleChanges) {

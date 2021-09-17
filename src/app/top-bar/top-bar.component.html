@@ -4,22 +4,18 @@
     <span></span>
     <span></span>
     <div>
-      <button mat-button (click)='showList()'>Choose Course</button>
-      <mat-list *ngIf='displayList'>
-        <mat-list-item *ngFor="let course of courseList" (click)="chooseCourse(course.id)">{{course.name}}</mat-list-item>
-      </mat-list>
+      <button mat-button [matMenuTriggerFor]= 'menu'>Choose Course</button>
+        <mat-menu #menu='matMenu'>
+          <button mat-button *ngFor="let course of courseList" (click)="chooseCourse(course.id)">{{course.name}}</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]= 'menu2'>Choose Tee</button>
+        <mat-menu #menu2='matMenu'>
+          <button mat-button (click)='chooseTee(0)'>Black</button>
+          <button mat-button (click)='chooseTee(1)'>Blue</button>
+          <button mat-button (click)='chooseTee(2)'>White</button>
+          <button mat-button (click)='chooseTee(3)'>Red</button>
+        </mat-menu>
     </div>
-    <div>
-
-      <button mat-button>Choose Tee</button>
-    </div>
-    <!-- <mat-form-field appearance="fill">
-      <mat-label>Choose a Course</mat-label>
-      <mat-select [(value)]="selected" >
-        <mat-option *ngFor="let course of courseList" [value]="course.id">{{course.name}}</mat-option>
-      </mat-select>
-    </mat-form-field> -->
-    <p>you selected {{selected}}</p>
   </mat-toolbar-row>
 
 </mat-toolbar>

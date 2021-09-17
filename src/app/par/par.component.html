@@ -1,23 +1,77 @@
 <mat-grid-list class='scroll' cols='24' rowHeight="10vh">
-  <mat-grid-tile class="box">1</mat-grid-tile>
-  <mat-grid-tile class="box">2</mat-grid-tile>
-  <mat-grid-tile class="box">3</mat-grid-tile>
-  <mat-grid-tile class="box">4</mat-grid-tile>
-  <mat-grid-tile class="box">5</mat-grid-tile>
-  <mat-grid-tile class="box">6</mat-grid-tile>
-  <mat-grid-tile class="box">7</mat-grid-tile>
-  <mat-grid-tile class="box">8</mat-grid-tile>
-  <mat-grid-tile class="box">9</mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[0].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[1].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[2].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[3].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[4].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[5].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[6].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[7].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[8].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
   <mat-grid-tile colspan='2' class="box">Out</mat-grid-tile>
-  <mat-grid-tile class="box">10</mat-grid-tile>
-  <mat-grid-tile class="box">11</mat-grid-tile>
-  <mat-grid-tile class="box">12</mat-grid-tile>
-  <mat-grid-tile class="box">13</mat-grid-tile>
-  <mat-grid-tile class="box">14</mat-grid-tile>
-  <mat-grid-tile class="box">15</mat-grid-tile>
-  <mat-grid-tile class="box">16</mat-grid-tile>
-  <mat-grid-tile class="box">17</mat-grid-tile>
-  <mat-grid-tile class="box">18</mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[9].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[10].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[11].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[12].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[13].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[14].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[15].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[16].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
+  <mat-grid-tile class="box">
+    <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[17].teeBoxes[0].par}}</span>
+    <ng-template #elseBlock></ng-template>
+  </mat-grid-tile>
   <mat-grid-tile colspan='2' class="box">In</mat-grid-tile>
   <mat-grid-tile colspan='2' class="box">Total</mat-grid-tile>
 </mat-grid-list>
