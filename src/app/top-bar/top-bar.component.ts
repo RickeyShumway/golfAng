@@ -23,7 +23,7 @@ export class TopBarComponent implements OnInit {
     this.apiCall.getHoles(id);
   }
   chooseTee(id: number) {
-    console.log('tee selected',id);
+    this.apiCall.changeTee(id);
   }
   ngOnInit(): void {
     this.apiCall.getCourses()
