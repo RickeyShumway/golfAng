@@ -1,4 +1,4 @@
-<mat-grid-list class='scroll' cols='24' rowHeight="10vh">
+<mat-grid-list class='scroll' cols='24' rowHeight="93px">
   <mat-grid-tile class="box">
     <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[0].teeBoxes[apiCall.currentTee$].par}}</span>
     <ng-template #elseBlock></ng-template>
@@ -79,7 +79,7 @@
     <ng-template #elseBlock></ng-template>
   </mat-grid-tile>
 </mat-grid-list>
-<mat-grid-list class='scroll' cols='24' rowHeight="10vh">
+<mat-grid-list class='scroll' cols='24' rowHeight="93px">
   <mat-grid-tile class="box">
     <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[0].teeBoxes[apiCall.currentTee$].yards}}</span>
     <ng-template #elseBlock></ng-template>
@@ -156,7 +156,7 @@
   <mat-grid-tile colspan='2' class="box">In</mat-grid-tile>
   <mat-grid-tile colspan='2' class="box">Total</mat-grid-tile>
 </mat-grid-list>
-<mat-grid-list class='scroll' cols='24' rowHeight="10vh">
+<mat-grid-list class='scroll' cols='24' rowHeight="93px">
   <mat-grid-tile class="box">
     <span *ngIf='apiCall.currentCourse$; else elseBlock'>{{apiCall.currentCourse$[0].teeBoxes[apiCall.currentTee$].hcp}}</span>
     <ng-template #elseBlock></ng-template>

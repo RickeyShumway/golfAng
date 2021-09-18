@@ -1,16 +1,19 @@
 @use '~@angular/material' as mat;
+.top {
+  height: 10vh;
 
+}
 .mat-toolbar {
   background-color: rgb(137, 113, 255);
   display: flex;
+  justify-content: space-between;
   border: 2px solid rgb(138, 111, 193);
   @include mat.elevation(3);
+  box-sizing:border-box;
+  align-items: center;
+  padding: 0 inherit;
 
-  .mat-toolbar-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+
   .mat-button {
     border-radius: 20px;
     @include mat.elevation(2);
@@ -22,5 +25,5 @@
   margin-top: 10vh;
 
 
-  
+
 }

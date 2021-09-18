@@ -1,22 +1,41 @@
+.mat-grid-list.scroll {
+  width: 5000px;
 
+}
   .scroll {
     width: 5000px;
+    // display: flex;
+
+    height: 100%;
+
+
+  }
+  .mat-grid-list {
+    // background-color: yellow;
 
   }
   .mat-grid-tile {
     width: 100%;
+    margin: 0;
+
+    padding: 0;
+
 
   }
 .box {
   border-bottom: 1px solid black;
   border-radius: 10px;
   background-color: lightcyan;
+
   input {
     height: 100%;
     width: 100%;
     border: none;
     text-align: center;
     font-size: 1.4em;
+    margin: 0;
+    border-bottom: 1px solid black;
+
   }
   input:focus,
   select:focus,
@@ -24,6 +43,8 @@
   button:focus {
     background-color: rgb(226, 255, 222);
     outline: none;
+    margin: 0;
+
   }
 }
 input::-webkit-outer-spin-button,
@@ -32,4 +53,5 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
 

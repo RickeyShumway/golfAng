@@ -1,22 +1,35 @@
 .table-container {
-  height: 100%;
-  background-color: lightblue;
+  max-height: 80vh;
+
   display: flex;
-  flex-direction: row;
 
+
+
+  padding: 0;
+  margin: 0;
   .non-scroll {
-    background-color: lightgreen;
     width: 8.5%;
-    box-sizing: border-box;
-    height: 100%;
-    .mat-grid-list.heading {
-
-
-    }
+    background-color: white;
+    padding-bottom: 1%;
+    // box-sizing: border-box;
   }
   .scrolling {
-    overflow-x: scroll;
+    overflow-y: hidden;
+   overflow-x: scroll;
     width:91.5%;
+
+
+
+
+
+  }
+  .scroll {
+    background-color: white;
+  }
+  .mat-grid-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .mat-grid-list.scroll {
     width: 5000px;
@@ -24,11 +37,56 @@
   }
   .mat-grid-tile {
     width: 100%;
+    padding: 0;
+    margin: 0;
+
+
 
   }
 }
-.box {
-  border-bottom: 1px solid black;
-  border-radius: 10px;
-}
 
+
+.box {
+  // border-bottom: 1px solid black;
+  border-radius: 10px;
+  background-color: lightcyan;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+
+
+  input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 0;
+
+
+  }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    background-color: rgb(222, 249, 255);
+    outline: none;
+    margin: 0;
+    padding: 0;
+
+
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.out {
+  background-color: rgb(246, 246, 246);
+  border-bottom: 1px solid black;
+
+
+}

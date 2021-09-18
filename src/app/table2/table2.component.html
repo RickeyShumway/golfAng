@@ -1,40 +1,41 @@
 <div id="table-contain" class="table-container">
-  <div class="non-scroll">
-    <mat-grid-list cols="1" rowHeight="10vh">
-      <mat-grid-tile class="box">Holes</mat-grid-tile>
-      <mat-grid-tile class="box">{{players[0].name}}</mat-grid-tile>
-      <mat-grid-tile class="box">{{players[1].name}}</mat-grid-tile>
-      <mat-grid-tile class="box">{{players[2].name}}</mat-grid-tile>
-      <mat-grid-tile class="box">{{players[3].name}}</mat-grid-tile>
-      <mat-grid-tile class="box">Par</mat-grid-tile>
-      <mat-grid-tile class="box">Yards</mat-grid-tile>
-      <mat-grid-tile class="box">H-Cap</mat-grid-tile>
+  <div class="non-scroll" >
+    <mat-grid-list class='no-scroll' cols="1" rowHeight="92.1px">
+      <mat-grid-tile class="box out"></mat-grid-tile>
+      <mat-grid-tile class="box"><input [(ngModel)]='players[0].name'></mat-grid-tile>
+      <mat-grid-tile class="box"><input [(ngModel)]='players[1].name'></mat-grid-tile>
+      <mat-grid-tile class="box"><input [(ngModel)]='players[2].name'></mat-grid-tile>
+      <mat-grid-tile class="box"><input [(ngModel)]='players[3].name'></mat-grid-tile>
+      <mat-grid-tile class="box out" >Par</mat-grid-tile>
+      <mat-grid-tile class="box out">Yards</mat-grid-tile>
+      <mat-grid-tile class="box out">H-Cap</mat-grid-tile>
+
     </mat-grid-list>
 
   </div>
   <div class="scrolling">
-    <mat-grid-list class='scroll' cols='24' rowHeight="10vh">
-      <mat-grid-tile class="box">1</mat-grid-tile>
-      <mat-grid-tile class="box">2</mat-grid-tile>
-      <mat-grid-tile class="box">3</mat-grid-tile>
-      <mat-grid-tile class="box">4</mat-grid-tile>
-      <mat-grid-tile class="box">5</mat-grid-tile>
-      <mat-grid-tile class="box">6</mat-grid-tile>
-      <mat-grid-tile class="box">7</mat-grid-tile>
-      <mat-grid-tile class="box">8</mat-grid-tile>
-      <mat-grid-tile class="box">9</mat-grid-tile>
-      <mat-grid-tile colspan='2' class="box">Out</mat-grid-tile>
-      <mat-grid-tile class="box">10</mat-grid-tile>
-      <mat-grid-tile class="box">11</mat-grid-tile>
-      <mat-grid-tile class="box">12</mat-grid-tile>
-      <mat-grid-tile class="box">13</mat-grid-tile>
-      <mat-grid-tile class="box">14</mat-grid-tile>
-      <mat-grid-tile class="box">15</mat-grid-tile>
-      <mat-grid-tile class="box">16</mat-grid-tile>
-      <mat-grid-tile class="box">17</mat-grid-tile>
-      <mat-grid-tile class="box">18</mat-grid-tile>
-      <mat-grid-tile colspan='2' class="box">In</mat-grid-tile>
-      <mat-grid-tile colspan='2' class="box">Total</mat-grid-tile>
+    <mat-grid-list class='scroll' cols='24' rowHeight="93px">
+      <mat-grid-tile class="box out">1</mat-grid-tile>
+      <mat-grid-tile class="box out">2</mat-grid-tile>
+      <mat-grid-tile class="box out">3</mat-grid-tile>
+      <mat-grid-tile class="box out">4</mat-grid-tile>
+      <mat-grid-tile class="box out">5</mat-grid-tile>
+      <mat-grid-tile class="box out">6</mat-grid-tile>
+      <mat-grid-tile class="box out">7</mat-grid-tile>
+      <mat-grid-tile class="box out">8</mat-grid-tile>
+      <mat-grid-tile class="box out">9</mat-grid-tile>
+      <mat-grid-tile colspan='2' class="box out">Out</mat-grid-tile>
+      <mat-grid-tile class="box out">10</mat-grid-tile>
+      <mat-grid-tile class="box out">11</mat-grid-tile>
+      <mat-grid-tile class="box out">12</mat-grid-tile>
+      <mat-grid-tile class="box out">13</mat-grid-tile>
+      <mat-grid-tile class="box out">14</mat-grid-tile>
+      <mat-grid-tile class="box out">15</mat-grid-tile>
+      <mat-grid-tile class="box out">16</mat-grid-tile>
+      <mat-grid-tile class="box out">17</mat-grid-tile>
+      <mat-grid-tile class="box out">18</mat-grid-tile>
+      <mat-grid-tile colspan='2' class="box out">In</mat-grid-tile>
+      <mat-grid-tile colspan='2' class="box out">Total</mat-grid-tile>
     </mat-grid-list>
     <app-player [playerId]="players[0].id"></app-player>
     <app-player [playerId]="players[1].id"></app-player>
