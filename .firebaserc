@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "golf-622d5": {
+      "hosting": {
+        "golf": [
+          "golf-622d5"
+        ]
+      }
+    }
+  }
+}

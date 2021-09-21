@@ -20,6 +20,10 @@ import { CourseListComponent } from './course-list/course-list.component'
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
+export const firebaseConfig = environment.firebaseConfig;
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,7 @@ import {MatMenuModule} from '@angular/material/menu';
     SecondBarComponent,
     ParComponent,
     CourseListComponent,
-    
+
 
 
 
@@ -48,7 +52,9 @@ import {MatMenuModule} from '@angular/material/menu';
     HttpClientModule,
     MatSelectModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
