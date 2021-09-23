@@ -15,10 +15,9 @@
     // box-sizing: border-box;
   }
   .scrolling {
-    overflow-y: hidden;
    overflow-x: scroll;
     width:91.5%;
-
+    height: 100%;
 
 
 
@@ -26,6 +25,7 @@
   }
   .scroll {
     background-color: white;
+   
   }
   .mat-grid-list {
     width: 100%;
