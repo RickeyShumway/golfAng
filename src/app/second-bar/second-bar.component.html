@@ -1,4 +1,5 @@
 <mat-toolbar-row>
   <div>Current Course: {{apiCall.courseName$}}</div>
   <div>Current Tee: {{getTee}}</div>
+  <button (click)="this.db.startGame()">New Game</button>
 </mat-toolbar-row>

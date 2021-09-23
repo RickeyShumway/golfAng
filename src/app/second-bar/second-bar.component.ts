@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiCallService} from "src/app/api-call.service";
+import { PlayerService } from '../services/player.service';
 
 @Component({
   selector: 'app-second-bar',
@@ -8,7 +9,10 @@ import { ApiCallService} from "src/app/api-call.service";
 })
 export class SecondBarComponent implements OnInit {
 
-  constructor(public apiCall: ApiCallService) { }
+  constructor(
+    public apiCall: ApiCallService,
+    public db: PlayerService
+      ) { }
 
   ngOnInit(): void {
 
@@ -30,4 +34,5 @@ export class SecondBarComponent implements OnInit {
     }
 
   }
+
 }

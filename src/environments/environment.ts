@@ -10,8 +10,6 @@ export const environment = {
     projectId: "golf-622d5",
     storageBucket: "golf-622d5.appspot.com",
     messagingSenderId: "294525550560",
-    appId: "1:294525550560:web:b081cc4b86c699bd423585",
-    measurementId: "G-CBXSN5KJ3G"
   }
 };
 

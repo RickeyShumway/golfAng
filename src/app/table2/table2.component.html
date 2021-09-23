@@ -2,10 +2,10 @@
   <div class="non-scroll" >
     <mat-grid-list class='no-scroll' cols="1" rowHeight="92.1px">
       <mat-grid-tile class="box out"></mat-grid-tile>
-      <mat-grid-tile class="box"><input [(ngModel)]='players[0].name'></mat-grid-tile>
-      <mat-grid-tile class="box"><input [(ngModel)]='players[1].name'></mat-grid-tile>
-      <mat-grid-tile class="box"><input [(ngModel)]='players[2].name'></mat-grid-tile>
-      <mat-grid-tile class="box"><input [(ngModel)]='players[3].name'></mat-grid-tile>
+      <mat-grid-tile class="box"><input (change)='updateScore()'[(ngModel)]='players[0].name'></mat-grid-tile>
+      <mat-grid-tile class="box"><input (change)='updateScore()'[(ngModel)]='players[1].name'></mat-grid-tile>
+      <mat-grid-tile class="box"><input (change)='updateScore()'[(ngModel)]='players[2].name'></mat-grid-tile>
+      <mat-grid-tile class="box"><input (change)='updateScore()'[(ngModel)]='players[3].name'></mat-grid-tile>
       <mat-grid-tile class="box out" >Par</mat-grid-tile>
       <mat-grid-tile class="box out">Yards</mat-grid-tile>
       <mat-grid-tile class="box out">H-Cap</mat-grid-tile>
