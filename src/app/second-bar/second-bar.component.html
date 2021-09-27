@@ -1,5 +1,8 @@
 <mat-toolbar-row>
-  <div>Current Course: {{apiCall.courseName$}}</div>
-  <div>Current Tee: {{getTee}}</div>
-  <button (click)="this.db.startGame()">New Game</button>
+  <div>
+    <div>Current Course: {{apiCall.courseName$}}</div>
+    <div>Current Tee: {{getTee}}</div>
+
+  </div>
+  <button mat-raised-button (click)="this.db.startGame()">New Game</button>
 </mat-toolbar-row>

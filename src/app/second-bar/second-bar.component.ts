@@ -8,7 +8,7 @@ import { PlayerService } from '../services/player.service';
   styleUrls: ['./second-bar.component.scss']
 })
 export class SecondBarComponent implements OnInit {
-
+  message: any;
   constructor(
     public apiCall: ApiCallService,
     public db: PlayerService
@@ -33,6 +33,9 @@ export class SecondBarComponent implements OnInit {
 
     }
 
+  }
+  finishMessage() {
+    
   }
 
 }
