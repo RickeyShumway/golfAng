@@ -38,6 +38,7 @@ export class PlayerComponent implements OnInit {
   update(): void {
       console.log(this.player.holeScore)
 
+
   }
 
 }
