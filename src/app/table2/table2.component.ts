@@ -1,10 +1,13 @@
-import { Component, OnInit, SimpleChange } from '@angular/core';
+import { Component, OnInit, SimpleChange, Injectable } from '@angular/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { PlayerService } from '../services/player.service';
 import { Player } from '../interfaces/player';
 import { NgClass, NgStyle } from '@angular/common';
 import { ApiCallService } from '../api-call.service';
 import { observable } from 'rxjs';
+@Injectable({
+  providedIn: 'root'
+})
 @Component({
   selector: 'app-table2',
   templateUrl: './table2.component.html',
